@@ -39,7 +39,12 @@ def all_heart_rate(user_email):
     """
     user = models.User.objects.raw({"_id": user_email}).first()
     heart_rate_measurements = user.heart_rate
-    return jsonify(heart_rate_measurements), 202
+    heart_times = user.heart_rate_times
+    patient = {
+        "heart_rate": heart_rate_measurements,
+        "time": heart_times
+        }      
+    return jsonify(patient), 202
 
 
 @app.route("/api/heart_rate/average/<user_email>", methods=["GET"])
