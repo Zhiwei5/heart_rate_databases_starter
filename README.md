@@ -1,5 +1,8 @@
 # heart_rate_databases_starter
-Starter codebase for BME590 Databases Assignment (which can be found [here](https://github.com/mlp6/Medical-Software-Design/blob/master/Lectures/databases/main.md#mini-projectassignment)). 
+
+  This is a back-end server project which using FLASK API. In total, it could achieve two GET and two post REQUESTS. The patients could post thier heartrate monitor on to the web server, get the time when they do the heartrate measurements, get the average heartrate and recerive the heartrate readings from a certain time. The patients are stored in the MangoDB database for later use.
+ 
+ # How to get started
 
 To get started with this sample code, you first need to get the mongodb program running. To do this, simply run 
 ```
@@ -14,8 +17,8 @@ either on your local machine (if you have docker installed there) or on a virtua
 connect("mongodb://vcm-0000.vm.duke.edu:27017/heart_rate_app") # open up connection to db
 ```
 
-once your database is running and your connection string is set, you can run the starter program by running `main.py` after activating your `virtualenv` and installing all the dependencies listed in `requirements.txt`.
+once your database is running and your connection string is set, you can run the starter program by running `heartrate_datebase.py` after activating your `virtualenv` and installing all the dependencies listed in `requirements.txt`.
 
 ```
-python main.py
+heartrate_datebase.py
 ```
