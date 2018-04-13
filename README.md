@@ -1,6 +1,6 @@
 # heart_rate_databases_starter
 
-  This is a back-end server project which using FLASK API. In total, it could achieve two GET and two POST requests. The patients could post thier heartrate monitor on to the web server, get the time when they do the heartrate measurements, get the average heartrate and recerive the heartrate readings from a certain time. The patients are stored in the MangoDB database for later use.
+  This is a back-end server project which using FLASK API. In total, it could achieve two GET and two POST requests. The patients could post thier heartrate readings on to the web server, get the time when they do the heartrate measurements, get the average heartrate and receive the heartrate readings from a certain time. The patients data are stored in the MangoDB database for later use.
  
  # How to get started
 
